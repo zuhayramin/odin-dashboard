@@ -10,9 +10,10 @@ body {
 .icons {
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(345deg)
         brightness(119%) contrast(106%);
-    display: inline;
+    display: block;
     height: 1.2rem;
     margin-right: 0.5rem;
+    text-align: center;
 }
 
 .logo {
@@ -33,6 +34,9 @@ body {
 .sidebar li {
     list-style: none;
     color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 .sidebar {
@@ -43,7 +47,9 @@ body {
 }
 
 ul {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-columns: 1fr;
     gap: 1rem;
+    padding-left: 0;
 }
