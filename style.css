@@ -16,14 +16,21 @@ body {
 
 .sidebar {
     background-color: #4391ce;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-column: 1/2;
-    gap: 1rem;
+    gap: 15px;
     padding-left: 2rem;
+    min-width: 200px;
 }
 
 .main-page {
     grid-column: 2/3;
+}
+
+.user-pages {
+    display: flex;
+    align-items: start;
 }
 
 .icons {
@@ -39,15 +46,16 @@ body {
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(345deg)
         brightness(119%) contrast(106%);
     display: inline;
-    height: 2.5rem;
+    height: 45px;
 }
 
 .logo-title {
     display: flex;
-    gap: 1rem;
+    gap: 20px;
     align-items: center;
     font-size: 1.5rem;
     color: white;
+    padding-top: 20px;
 }
 
 .sidebar li {
@@ -55,13 +63,12 @@ body {
     color: white;
     display: flex;
     justify-content: left;
-    align-items: center;
+    align-items: flex-start;
 }
 
 ul {
     display: flex;
     flex-direction: column;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding-left: 0;
+    gap: 20px;
+    padding: 15px 0;
 }
