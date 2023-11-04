@@ -26,6 +26,8 @@ body {
 
 .main-page {
     grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
 }
 
 .user-pages {
@@ -71,4 +73,52 @@ ul {
     flex-direction: column;
     gap: 20px;
     padding: 15px 0;
+}
+
+.top-section {
+    flex: 1;
+    background-color: #ffffff;
+}
+
+.bottom-section {
+    flex: 4;
+    background-color: #e3e8ef;
+}
+
+.page-icon {
+    height: 20px;
+    padding-left: 40px;
+}
+
+.profile-pic {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding-top: 15px;
+    padding-right: 30px;
+}
+
+.search-bar {
+    border-radius: 20px;
+    border-style: 1px solid black;
+    background-color: #d8dde3;
+    width: 600px;
+    height: 25px;
+}
+
+.left-search,
+.right-search {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.right-search {
+    padding-right: 50px;
 }
