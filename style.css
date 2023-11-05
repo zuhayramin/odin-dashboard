@@ -95,6 +95,11 @@ ul {
     border-radius: 50%;
 }
 
+.username {
+    font-size: 1rem;
+    min-width: max-content;
+}
+
 .search-section {
     display: flex;
     align-items: center;
@@ -121,4 +126,50 @@ ul {
 
 .right-search {
     padding-right: 50px;
+}
+
+.user-info {
+    display: grid;
+    padding: 15px 40px;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "mainPic greeting newbtn uploadbtn sharebtn"
+        "mainPic username newbtn uploadbtn sharebtn";
+    align-items: center;
+}
+
+.main-pic {
+    height: 80px;
+    border-radius: 50%;
+    grid-area: mainPic;
+}
+
+.user-greeting {
+    grid-area: greeting;
+    font-size: 1rem;
+}
+
+.main-username {
+    grid-area: username;
+    font-size: 1.5rem;
+}
+
+.new-btn {
+    grid-area: newbtn;
+}
+.upload-btn {
+    grid-area: uploadbtn;
+}
+.share-btn {
+    grid-area: sharebtn;
+}
+
+button {
+    background-color: #4391ce;
+    color: white;
+    border-radius: 100px;
+    border-style: none;
+    height: 3rem;
+    width: 7rem;
 }
