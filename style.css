@@ -236,3 +236,38 @@ button {
     font-weight: 500;
     font-size: 20px;
 }
+
+.trending-profile-pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+}
+
+.trending-cards {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.trending-user {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-at {
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.user-title {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #818181;
+    margin-top: 3px;
+}
