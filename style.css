@@ -204,7 +204,7 @@ button {
     padding: 20px 30px;
     display: flex;
     flex-direction: column;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 30px;
 }
 
@@ -270,4 +270,10 @@ button {
     font-size: 0.8rem;
     color: #818181;
     margin-top: 3px;
+}
+
+.icon-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
