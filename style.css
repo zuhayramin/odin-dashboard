@@ -277,3 +277,28 @@ button {
     justify-content: center;
     align-items: center;
 }
+
+.project-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 60px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.card {
+    display: flex;
+}
+
+.card-left {
+    background-color: yellow;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.card-right {
+    background-color: white;
+    height: 170px;
+    padding: 30px;
+}
