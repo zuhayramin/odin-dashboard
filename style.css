@@ -282,7 +282,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 60px;
+    gap: 40px;
     margin-top: 10px;
     margin-right: 20px;
 }
@@ -292,13 +292,39 @@ button {
 }
 
 .card-left {
-    background-color: yellow;
+    background-color: #e7b54a;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    width: 15px;
 }
 
 .card-right {
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    height: 170px;
+    height: 120px;
     padding: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-header {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.card-body {
+    font-weight: 400;
+    font-size: 14px;
+    color: #818181;
+    margin-top: 5px;
+}
+
+.card-icons {
+    display: flex;
+    height: 25px;
+    position: relative;
+    top: 30px;
+    left: 180px;
+    gap: 10px;
 }
